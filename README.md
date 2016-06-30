@@ -23,6 +23,7 @@ to have the mod_stan module compiled and installed into Apache modules directory
 You need to enable mod_headers using the following command:
 ```
 sudo a2enmod headers
+```
 
 then adjust ServerName parameter in stan.conf file and copy it into
 /etc/apache2/sites/available directory.
@@ -31,7 +32,7 @@ Now you can enable new web-site and restart Apache server:
 ```
 sudo a2ensite stan
 sudo service apache2 restart
-
+```
 Now the new web site is ready to answer requests. 
 
 How to send request.json to the server
